@@ -4,7 +4,7 @@
   "description": "",
   "main": "aoc.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "get": "node aoc.js"
   },
   "repository": {
     "type": "git",
