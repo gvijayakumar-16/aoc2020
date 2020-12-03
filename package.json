@@ -1,0 +1,23 @@
+{
+  "name": "aoc2020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "aoc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gvijayakumar-16/aoc2020.git"
+  },
+  "keywords": [
+    "aoc",
+    "2020"
+  ],
+  "author": "Vijayakumar G",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gvijayakumar-16/aoc2020/issues"
+  },
+  "homepage": "https://github.com/gvijayakumar-16/aoc2020#readme"
+}
