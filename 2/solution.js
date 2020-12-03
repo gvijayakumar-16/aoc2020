@@ -1012,3 +1012,21 @@ passwords.forEach(password => {
 });
 console.log("Part 1:")
 console.log(validPasswords.length);
+
+//Part 2
+console.log("Part 2:")
+validPasswords = [];
+passwords.forEach(password => {
+    let [policy, actualPassword] = password.split(':');
+    let [length, character] = policy.split(' ');
+    let [position1, position2] = length.split('-');
+    let characters = actualPassword.trim().split('');
+    let position1Character = characters[position1 - 1],
+        position2Character = characters[position2 - 1];
+    if (position1Character == character && position2Character != character) {
+        validPasswords.push(password);
+    } else if (position1Character != character && position2Character == character) {
+        validPasswords.push(password);
+    }
+});
+console.log(validPasswords.length);
