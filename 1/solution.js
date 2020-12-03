@@ -201,6 +201,7 @@ let input = [
     1769
 ];
 
+//part 1
 for (let firstCounter = 0; firstCounter < input.length - 1; firstCounter++) {
     let firstEntry = input[firstCounter];
     for (let secondCounter = firstCounter + 1; secondCounter < input.length; secondCounter++) {
@@ -208,6 +209,21 @@ for (let firstCounter = 0; firstCounter < input.length - 1; firstCounter++) {
         if (firstEntry + secondEntry == 2020) {
             console.log(firstEntry, secondEntry);
             console.log(firstEntry * secondEntry);
+        }
+    }
+}
+
+//part 2
+for (let firstCounter = 0; firstCounter < input.length - 1; firstCounter++) {
+    let firstEntry = input[firstCounter];
+    for (let secondCounter = firstCounter; secondCounter < input.length - 1; secondCounter++) {
+        let secondEntry = input[secondCounter];
+        for (let thirdCounter = secondCounter + 1; thirdCounter < input.length; thirdCounter++) {
+            let thirdEntry = input[thirdCounter];
+            if (firstEntry + secondEntry + thirdEntry == 2020) {
+                console.log(firstEntry, secondEntry, thirdEntry);
+                console.log(firstEntry * secondEntry * thirdEntry);
+            }
         }
     }
 }
